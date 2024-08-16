@@ -1,0 +1,116 @@
+<!--
+ Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-padding">
+  <!-- <h1>Activity 02 demo</h1>
+  <div>
+    <oj-form-layout max-columns="3" direction="row">
+      <div>
+        <h2>
+          Enter name
+        </h2>
+        <oj-c-input-text
+        id="text-input"
+        value="{{name}}"  
+        label-hint="Enter name"
+        label-edge="inside">
+        </oj-c-input-text>
+      </div>
+      
+      <div>
+        <h3>
+          Enter your Salary
+        </h3>
+        <oj-c-input-number
+                  value="{{salary}}"
+                  label-hint="Enter Salary"
+      ></oj-c-input-number>
+      </div>
+      <div>
+        <h3>
+          Enter your Password
+        </h3>
+        <oj-c-input-password value="{{password}}" label-hint="">
+  
+        </oj-c-input-password>
+      </div>
+      <div>
+        <h3>
+          Select the date
+        </h3>
+        <oj-label for="datepicker">Date Picker</oj-label>
+        <oj-date-picker id="" value="{{date}}">
+            
+        </oj-date-picker>
+      </div>
+    </oj-form-layout>
+    <h3>
+      Hyy <oj-bind-text value="[[name]]">  </oj-bind-text>
+      
+      </h3>
+
+        <h3>
+        Your password is <oj-bind-text value="[[password]]"> </oj-bind-text> 
+        </h3>
+     
+      <h3>
+        The selected date is <oj-bind-text value="[[date]]"> </oj-bind-text>
+      </h3>
+   
+  </div> -->
+  <!-- <h2>Activity 03 Demo</h2>
+  <div>
+    <oj-input-text
+    id="text-input"
+    value="{{name}}"
+    label-hint="Enter the name"
+    label-edge="inside" style="margin-bottom:10px;">
+    </oj-input-text>
+    <h4 style="font-weight: 600;">Buttons</h4>
+    <hr>
+    <oj-c-button id="chroming_button5" chroming="danger" label="Submit" style="background-color: green;"></oj-c-button>
+    <oj-c-button id="chroming_button4" chroming="callToAction" label="Call To Action" style="background-color: green;"></oj-c-button>
+    
+    <oj-c-button id="chroming_button3" chroming="solid" label="Solid" style="background-color: rgb(255, 246, 127);"></oj-c-button>
+    <hr>
+    <h4 style="font-weight: 600;">Messages</h4>
+    <div id="containerDiv">
+      
+      <div class="oj-typography-heading-md oj-sm-margin-5x-bottom">Personal Information</div>
+    
+      <oj-message-banner
+        data="[[personalInformationMessages]]"
+        type="section"
+        on-oj-close="[[closePersonalInformationMessage]]"></oj-message-banner>
+    
+      <oj-form-layout class="oj-sm-margin-5x-top" direction="row" max-columns="3">
+        <oj-input-text label-hint="Employee Name" required></oj-input-text>
+        <oj-input-text label-hint="Employee DOB" required></oj-input-text>
+        <oj-input-text label-hint="Employee Email" required></oj-input-text>
+      </oj-form-layout>
+    
+      <oj-button chroming="outlined" on-oj-action="[[updatePersonalInfo]]">Update</oj-button>
+      <oj-progress-bar
+              id="progressBar"
+              value="[[indeterminate().length > 0 ? -1 : progressValue]]"></oj-progress-bar>
+              <oj-form-layout aria-controls="progressBar">
+                <oj-checkboxset id="indeterminateCheckbox" value="{{indeterminate}}">
+                  <oj-option id="indeterminate" value="indeterminate">Indeterminate</oj-option>
+                </oj-checkboxset>
+                <oj-input-number
+                  id="spinner-input"
+                  step="10"
+                  value="{{progressValue}}"
+                  label-hint="Value"
+                  disabled="[[indeterminate().length > 0]]"
+                  min="0"
+                  max="100"></oj-input-number>
+              </oj-form-layout>
+    </div>
+    
+
+  </div> -->
+  
+</div>
