@@ -1,0 +1,49 @@
+<!--
+ Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-padding">
+  <h2>Activity-04</h2>  
+  
+    <h6>Button Action</h6>
+    <div>
+      <oj-c-button id="button1" on-oj-action="[[handleClick]]" label="Button Action 1"></oj-c-button>
+      <oj-c-button id="button2" on-oj-action="[[handleClick]]" label="Button Action 2"></oj-c-button>
+    </div>
+
+    <div id="sampleDemo" class="demo-padding demo-container">
+      <div id="componentDemoContent" style="width: 1px; min-width: 100%;">
+                
+        <oj-table
+          id="table"
+          aria-label="Employee Table"
+          accessibility.row-header="depName"
+          data="[[dataprovider]]"
+          selection-mode='{"row": "multiple", "column": "multiple"}'
+          dnd='{"reorder": {"columns": "enabled"}}'
+          scroll-policy="loadMoreOnScroll"
+          scroll-policy-options='{"fetchSize": 10}'
+          columns='[{"headerText": "Id", 
+                     "field": "id",
+                     "headerClassName": "oj-sm-only-hide",
+                     "className": "oj-sm-only-hide",
+                     "resizable": "enabled",
+                     "id": "id"},
+                    {"headerText": "Name", 
+                     "field": "name",
+                     "resizable": "enabled",
+                     "id": "name"},
+                    {"headerText": "Salary", 
+                     "field": "salary",
+                     "resizable": "enabled",
+                     "id": "salary"}
+                    ]'
+          class="demo-table-container"></oj-table>
+        
+        
+        
+      </div>
+    </div>
+  
+</div>
