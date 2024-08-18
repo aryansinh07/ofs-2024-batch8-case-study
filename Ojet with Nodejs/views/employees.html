@@ -1,0 +1,79 @@
+<!-- <div class="oj-hybrid-padding">
+    <h2>Employees</h2> 
+      <oj-c-button id="button2" on-oj-action="[[AllEmployee]]" label="Fetch Employees"></oj-c-button> 
+      <div hidden="" id="sampleDemo" class="demo-padding demo-container">
+        <div id="componentDemoContent" style="width: 1px; min-width: 100%;" >
+                  
+          <oj-table
+            id="table"
+            aria-label="Employee Table"
+            accessibility.row-header="name"
+            data="[[dataprovider]]"
+            selection-mode='{"row": "multiple", "column": "multiple"}'
+            dnd='{"reorder": {"columns": "enabled"}}'
+            scroll-policy="loadMoreOnScroll"
+            scroll-policy-options='{"fetchSize": 5}'
+            columns='[{"headerText": "Id", 
+                       "field": "id",
+                       "headerClassName": "oj-sm-only-hide",
+                       "className": "oj-sm-only-hide",
+                       "resizable": "enabled",
+                       "id": "id"},
+                      {"headerText": "Name", 
+                       "field": "name",
+                       "resizable": "enabled",
+                       "id": "name"},
+                      {"headerText": "Salary", 
+                       "field": "salary",
+                       "resizable": "enabled",
+                       "id": "salary"}
+                      ]'
+            class="demo-table-container"></oj-table>
+          
+          
+          
+        </div>
+        <div>
+          <oj-c-button id="button3" on-oj-action="[[AllEmployee]]" label="Load More"></oj-c-button> 
+        </div>
+      </div>
+    
+  </div> -->
+
+  <div class="oj-hybrid-padding">
+    <h2>Employees</h2> 
+    <oj-c-button id="button2" on-oj-action="[[AllEmployee]]" label="Fetch Employees"></oj-c-button> 
+    <div hidden="" id="sampleDemo" class="demo-padding demo-container">
+      <div id="componentDemoContent" style="width: 1px; min-width: 100%;">
+        <oj-table
+          id="table"
+          aria-label="Employee Table"
+          accessibility.row-header="name"
+          data="[[dataprovider]]"
+          selection-mode='{"row": "multiple", "column": "multiple"}'
+          dnd='{"reorder": {"columns": "enabled"}}'
+          scroll-policy="loadMoreOnScroll"
+          scroll-policy-options='{"fetchSize": 5}'
+          columns='[{"headerText": "Id", 
+                     "field": "id",
+                     "headerClassName": "oj-sm-only-hide",
+                     "className": "oj-sm-only-hide",
+                     "resizable": "enabled",
+                     "id": "id"},
+                    {"headerText": "Name", 
+                     "field": "name",
+                     "resizable": "enabled",
+                     "id": "name"},
+                    {"headerText": "Salary", 
+                     "field": "salary",
+                     "resizable": "enabled",
+                     "id": "salary"}
+                    ]'
+          class="demo-table-container"></oj-table>
+      </div>
+      <div>
+        <oj-c-button id="button3" on-oj-action="[[AllEmployee]]" label="Load More"></oj-c-button> 
+      </div>
+    </div>
+  </div>
+  

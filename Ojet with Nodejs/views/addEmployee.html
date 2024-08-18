@@ -1,0 +1,55 @@
+<h2>Add Employee</h2> 
+<div class="oj-hybrid-padding">
+    
+      <div style="display: flex; flex-direction: row;">
+       <!--Form-->
+       <div id="employeeform">
+        <oj-c-input-text
+      value={{name}}
+      label-hint="Enter the name" style="margin-bottom: 20px;"
+     ></oj-c-input-text> <br>
+      <oj-c-input-text
+       value={{salary}}
+      label-hint="Enter the salary" style="margin-bottom: 20px;"
+      >
+      </oj-c-input-text>
+      <oj-c-button id="button4" on-oj-action="[[addRow]]" label="Submit" style="background-color: lightgreen;"></oj-c-button> 
+      </div>
+      <!--Table-->
+      <div  id="sampleDemo" class="demo-padding demo-container">
+        <div id="componentDemoContent" style="width: 1px; min-width: 100%;" >
+                  
+          <oj-table
+            id="table"
+            aria-label="Employee Table"
+            accessibility.row-header="name"
+            data="[[dataprovider]]"
+            selection-mode='{"row": "multiple", "column": "multiple"}'
+            dnd='{"reorder": {"columns": "enabled"}}'
+            scroll-policy="loadMoreOnScroll"
+            scroll-policy-options='{"fetchSize": 10}'
+            columns='[{"headerText": "Id", 
+                       "field": "id",
+                       "headerClassName": "oj-sm-only-hide",
+                       "className": "oj-sm-only-hide",
+                       "resizable": "enabled",
+                       "id": "id"},
+                      {"headerText": "Name", 
+                       "field": "name",
+                       "resizable": "enabled",
+                       "id": "name"},
+                      {"headerText": "Salary", 
+                       "field": "salary",
+                       "resizable": "enabled",
+                       "id": "salary"}
+                      ]'
+            class="demo-table-container"></oj-table>
+          
+          
+          
+        </div>
+      </div>
+      </div>
+      
+      
+  </div>

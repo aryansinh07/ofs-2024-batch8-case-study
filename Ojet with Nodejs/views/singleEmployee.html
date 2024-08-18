@@ -1,0 +1,46 @@
+<div class="oj-hybrid-padding">
+    <h2>Single Employee Detail</h2> 
+      <div id="input-id">
+        <oj-c-input-number
+        value={{inputid}}
+        label-hint="Enter the id"
+        style="margin-bottom: 10px; width: 400px;"
+       >
+       </oj-c-input-number><br>
+       <oj-c-button id="button4" on-oj-action="[[singleEmployee]]" label="Submit"></oj-c-button>
+      </div> 
+      <div hidden="" id="sampleDemo" class="demo-padding demo-container">
+        <div id="componentDemoContent" style="width: 1px; min-width: 100%;" >
+                  
+          <oj-table
+            id="table"
+            aria-label="Employee Table"
+            accessibility.row-header="name"
+            data="[[dataprovider]]"
+            selection-mode='{"row": "multiple", "column": "multiple"}'
+            dnd='{"reorder": {"columns": "enabled"}}'
+            scroll-policy="loadMoreOnScroll"
+            scroll-policy-options='{"fetchSize": 10}'
+            columns='[{"headerText": "Id", 
+                       "field": "id",
+                       "headerClassName": "oj-sm-only-hide",
+                       "className": "oj-sm-only-hide",
+                       "resizable": "enabled",
+                       "id": "id"},
+                      {"headerText": "Name", 
+                       "field": "name",
+                       "resizable": "enabled",
+                       "id": "name"},
+                      {"headerText": "Salary", 
+                       "field": "salary",
+                       "resizable": "enabled",
+                       "id": "salary"}
+                      ]'
+            class="demo-table-container"></oj-table>
+          
+          
+          
+        </div>
+      </div>
+    
+  </div>
