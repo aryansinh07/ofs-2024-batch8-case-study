@@ -1,0 +1,21 @@
+<div style="display: flex; flex-direction: row ; justify-content: center; align-items: center;">
+    <div>
+        <h2 style="margin-bottom: 10px;"> Login</h2>
+        <div id="error" style="color: red; margin-bottom: 10px;">
+    
+        </div>
+        <oj-c-input-text
+                  id="text-input"
+                  value="{{user_name}}"
+                  label-hint="Enter the user_name"
+                  label-edge="inside" style="margin-bottom: 10px;">
+        </oj-c-input-text>
+        <oj-c-input-text
+                  id="text-input"
+                  value="{{user_password}}"
+                  label-hint="Enter the user password"
+                  label-edge="inside" style="margin-bottom: 10px; ">
+        </oj-c-input-text>
+        <oj-c-button id="button1" on-oj-action="[[onSubmit]]" label="Login" style="background-color: lightgreen; width: 200px;"></oj-c-button>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+<div style="display: flex; flex-direction: row ; justify-content: center; align-items: center;">
+    <div style="width: 500px;">
+        <h2 style="margin-bottom: 10px;"> Register </h2>
+        <oj-c-form-layout
+        id="formLayoutOptions"
+        max-columns="2"
+        direction="row"
+        user-assistance-density="compact">
+        <oj-c-input-text
+                  id="text-input"
+                  value="{{first_name}}"
+                  label-hint="First Name"
+                  label-edge="inside" style="margin-bottom: 10px;">
+        </oj-c-input-text>
+        <oj-c-input-text
+                  id="text-input"
+                  value="{{last_name}}"
+                  label-hint="Last Name"
+                  label-edge="inside" style="margin-bottom: 10px;">
+        </oj-c-input-text>
+        <oj-c-input-number
+                value="{{age}}"
+                label-hint="Age" style="margin-bottom: 10px";
+                ></oj-c-input-number>
+        <oj-c-input-text
+                id="text-input"
+                value="{{email_id}}"
+                label-hint="Email Id"
+                label-edge="inside" style="margin-bottom: 10px;">
+      </oj-c-input-text>
+      <oj-c-input-number
+                value="{{adhaar_no}}"
+                label-hint="Adhaar No" style="margin-bottom: 10px;"
+                >
+       </oj-c-input-number>
+       <oj-c-input-text
+                id="text-input"
+                value="{{city}}"
+                label-hint="City"
+                label-edge="inside" style="margin-bottom: 10px;">
+      </oj-c-input-text>
+      <oj-c-input-number
+      value="{{mobile_no}}"
+      label-hint="Mobile No" style="margin-bottom: 10px;"
+      >
+      </oj-c-input-number>
+      <oj-c-input-text
+                id="text-input"
+                value="{{login_user_name}}"
+                label-hint="User Name"
+                label-edge="inside" style="margin-bottom: 10px;">
+      </oj-c-input-text>
+      <oj-c-input-text
+                id="text-input"
+                value="{{user_password}}"
+                label-hint="User Password"
+                label-edge="inside" style="margin-bottom: 10px;">
+      </oj-c-input-text>
+        <oj-c-button id="button1" on-oj-action="[[onSubmit]]" label="Register" style="background-color: lightgreen; width: 200px;"></oj-c-button>
+    </oj-c-form-layout>
+    </div>
+</div>

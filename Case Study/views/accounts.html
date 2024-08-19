@@ -1,0 +1,20 @@
+<div class="oj-hybrid-padding">
+    <h2>Accounts</h2> 
+    <oj-c-button id="button2" on-oj-action="[[AllAccounts]]" label="Fetch Accounts"></oj-c-button> 
+    <div hidden="" id="sampleDemo" class="demo-padding demo-container">
+      <div id="componentDemoContent" style="width: 1px; min-width: 100%;">
+        <oj-table
+  id="table"
+  aria-label="Accounts Table"
+  accessibility.row-header="account_no"
+  data="[[dataprovider]]"
+  dnd='{"reorder": {"columns": "enabled"}}'
+  scroll-policy="loadMoreOnScroll"
+  scroll-policy-options='{"fetchSize": 10}'
+  columns="[[columns]]"
+  class="demo-table-container"></oj-table>
+
+      </div>
+    </div>
+  </div>
+  
